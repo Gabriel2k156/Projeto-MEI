@@ -1,0 +1,160 @@
+
+body {
+  background-color: #040811;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.logo {
+  width: 450px;
+  height: 300px;
+}
+
+header{
+ 
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #0a0f1c;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  display: flex;
+  flex-wrap: wrap;
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section, aside {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1, h2, h3 { /* Altera a cor das fontes para azul */
+  color: #00aaff;
+}
+
+header{
+text-align: center;
+padding: 2rem;
+background-color: #011627;
+}
+
+.galeria-flex {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+padding: 2rem;
+}
+
+.linha1{
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.linha1 img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba (0, 255, 255, 0.2); 
+}
+
+.linha1 img:hover {
+  transform: scale(1.05); /* Altera o tamanho da foto da galeria quando o mouse é passado por cima */
+  box-shadow: 0 0 15px #00f0ff
+}
+
+
+
+.linha2 img{ /* Ajusta as propriedades das imagens dentro do conteiner da galeria */
+  width: 300px; /* Largura da imagem */
+  height: 200px; /* Altura da imagem */
+  object-fit: cover; /* Ajusta a imagem dentro do conteiner */
+  border-radius: 12px; /* Ajusta as bordas da imagem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px #00FFFF; /* Sombra que aparece ao redor da imagem quando o mouse é passado por cima */
+}
+
+.linha2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f0ff
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label, form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #00aaff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #008ecc;
+}
+
+footer {
+  background-color: #000000e8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+#plateia{   
+    height: 500px;
+    display: flex;
+}
+
+#dubstep{
+    height: 400px;
+    width: 700px;
+}
