@@ -1,110 +1,146 @@
 body {
-  background-color: #040811;
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+  background-color: #040811; /* Altera a cor de fundo do site */
+  font-family: 'Poppins', sans-serif; /* Altera a fonte */
+  margin: 0; /* Altera a margem do site */
   padding: 0;
-  color: white;
+  color: white; /* Muda a cor do texto para branco */
 }
 
-.corpo {
- 
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+.logo { /* Ajustes da foto da logo */
+  width: 450px; /* Altera  a largura */
+  height: 300px; /* Altera a altura */
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.8);
-  text-align: center;
-  padding: 20px 0;
-}
-
-.logo {
-  width: 250px;
-  height: 300px;
-}
-
-nav {
+nav { /* Propriedades do nav */
   background-color: #0a0f1c;
   padding: 10px 0;
-  text-align: center;
+  text-align: center; /* Centraliza os elementos do nav */
 }
 
+
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  display: flex; /* Exibe os itens da lista lado a lado */
+  flex-wrap: wrap; /* "Amarra" os elementos, deixando-os todos juntos */
+  padding: 0; /* Remove o espaçamento interno da lista */
+  margin: 0; /* Remove a margem externa da lista */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 30px; /* Define o espaçamento entre os itens */
 }
 
 nav ul li a {
+  display: flex;
+  flex-wrap: wrap;
   color: #00aaff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 600; /* Define a espessura da fonte dos links */
 }
 
-nav ul li a:hover {
+nav ul li a:hover { /* Aplica sublinhado no texto quando o mouse é passado por cima do nav*/
   text-decoration: underline;
 }
 
-section, aside {
-  padding: 40px 20px;
+section, aside { 
+  padding: 40px 20px; /* Altera o espaçamento interno dos section e aside */
   text-align: center;
 }
 
-h2, h3 {
+
+h1, h2, h3 { /* Altera a cor das fontes para azul */
   color: #00aaff;
+}
+
+header{
+text-align: center; /*Alinha os itens do header */
+padding: 2rem;
+background-color: #011627;
+}
+
+.galeria-flex { /* Conteiner das fotos da galeria */
+gap: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2rem;
+}
+
+.linha1{ /* Ajusta o conteiner das imagens */
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.linha1 img{
+  width: 300px; /*Muda a largura das fotos */
+  height: 200px; /* Muda a altura das fotos */
+  object-fit: cover; /* Faz com que a foto tome todo espaço do conteiner */
+  border-radius: 12px; /* Altera a borda da foto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Mini-animação pra quando o mouse passa por cima da foto */
+  box-shadow: 0 4px 12px rgba (0, 255, 255, 0.2); /*Aplica uma sombra azul quando o mouse passa por cima da foto */
+}
+
+.linha1 img:hover {
+  transform: scale(1.05); /* Altera o tamanho da foto da galeria quando o mouse é passado por cima */
+  box-shadow: 0 0 15px #00f0ff
+}
+
+
+
+.linha2 img{ /* Ajusta as propriedades das imagens dentro do conteiner da galeria */
+  width: 300px; /* Largura da imagem */
+  height: 200px; /* Altura da imagem */
+  object-fit: cover; /* Ajusta a imagem dentro do conteiner */
+  border-radius: 12px; /* Ajusta as bordas da imagem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px #00FFFF; /* Sombra que aparece ao redor da imagem quando o mouse é passado por cima */
+}
+
+.linha2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f0ff
 }
 
 form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
+  flex-direction: column; /* Deixa os itens do formulário em alinhados colunas */
+  align-items: center; /* Alinha os itens do formulário no centro */
+  max-width: 500px; /*Largura máxima do formulario */
+  margin: 0 auto; /* Centraliza o formulario na tela */
+  background-color: rgba(255, 255, 255, 0.1); /* Altera a cor do formulario */
+  padding: 20px; /* Altera a borda interna do formulario */
+  border-radius: 10px; /* Arredonda as pontas do formulário */
 }
 
-form label, form input, form textarea {
-  width: 100%;
-  margin-bottom: 10px;
+form label, form input, form textarea { /* Altera as propriedades dos elementos do formulario */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  margin-bottom: 10px;/* Espaçamento inferior entre os campos */
 }
 
 form input, form textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
+  padding: 10px; /* Altera o espaçamento interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Arredonda as bordas dos campos */
+} 
 
 form input[type="submit"] {
-  background-color: #00aaff;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+  background-color: #00aaff; /* Altera a cor do botão */
+  color: white; /* Altera a cor do texto */
+  font-weight: bold; /* Deixa o texto do botão em negrito */
+  cursor: pointer; /* Altera o cursor "para mãozinha" ao passar por cima */
 }
 
 form input[type="submit"]:hover {
-  background-color: #008ecc;
+  background-color: #008ecc; /* Muda a cor do botão quando o mouse passa por cima */
 }
 
 footer {
-  background-color: #000000e8;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-#plateia{   
-    height: 500px;
-    display: flex;
+  background-color: #000000e8; /* ALtera a cor do rodapé para preto */
+  color: white; /* Altera a cor do texto */
+  text-align: center; /* Alinha os itens do rodapé no centro */
+  padding: 20px;/* Altera o espaçamento interno */
+  font-size: 14px; /* Altera o tamanho da fonte */
 }
 
 #dubstep{
-    height: 400px;
-    width: 700px;
+    height: 400px; /* Define altura da imagem com id="dubstep" */
+    width: 700px;/* Define largura da imagem com id="dubstep" */
 }

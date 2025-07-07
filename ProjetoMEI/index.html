@@ -4,61 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MI Áudio & Iluminação</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!--Conecta o arquivo CSS ao HTML-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> <!--Importa uma fonte externa para o site-->
 </head>
 <body>
+
   <div class="corpo">
     <header>
       <img src="Imagens/logo.png" alt="Logo da empresa MI Áudio & Iluminação" class="logo">
     </header>
 
-    <nav>
+    <nav> <!--Menu de navegação-->
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#formulario">Contrate</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#formulario">Contate-nos</a></li>
+        <li><a href="#headergaleria">Galeria</a></li>
       </ul>
     </nav>
 
-    <section id="sobre">
+    <section id="sobre"> <!--Seção de apresetação da empresa-->
       <h2>Sobre nós</h2>
-      <p>Especializados em eventos, oferecemos experiências inesquecíveis com som e iluminação de qualidade.</p>
+
+      <p>Na MI Áudio e Iluminação, transformamos eventos em experiências memoráveis.<br>
+      Com tecnologia de ponta e uma equipe especializada, oferecemos soluções<br> 
+      completas em som e iluminação para todo tipo de evento — de festas íntimas<br> 
+      a grandes produções. Nosso compromisso é entregar qualidade, impacto visual<br> 
+      e sonoro, sempre com atenção aos detalhes e à satisfação do cliente.</p>
+
       <img src="Imagens/dubstep.jpg" id="dubstep" alt="Mesa de som iluminada em evento">
-      <!-- Aqui pode entrar uma imagem com equipamentos de som ou uma pista iluminada -->
-      <!-- Ex:  -->
+      
     </section>
 
-    <section id="servicos">
+    <section id="servicos"> <!--Descrição dos serviços oferecidos-->
       <h2>Nossos Serviços</h2>
-      <ul>
-        <li>Sonorizacão Profissional para eventos</li>
-        <li>Iluminação Cênica e de pista</li>
-        <li>Locação de equipamentos</li>
-        <li>DJ e suporte técnico</li>
+       <ul>
+        <li>Sonorizacão Profissional para eventos com som de<br> qualidade para garantir um audio limpo e sem falhas.
+
+</li>
+      <br>
+        <li>Criamos atmosferas visuais que encantam e transformam<br> o ambiente do seu evento. A iluminação cênica é ideal para
+          <br> destacar decorações, painéis, jardins e fachadas, enquanto<br> 
+          a iluminação de pista traz movimento e energia para festas<br> e celebrações.</li>
+
+        <br>
+        <li>Oferecemos um amplo catálogo de equipamentos profissionais para<br> locação, incluindo caixas de som, microfones, 
+          mesas de som, refletores<br> moving lights, painéis de LED,</li>
+        <br>
+        <li>Disponibilizamos DJs profissionais com repertório versátil para animar qualquer tipo<br> de evento — de casamentos 
+          e aniversários a festas corporativas. Além disso, nossa<br> equipe de suporte técnico acompanha cada etapa do evento, 
+          garantindo que<br> todos os sistemas de som e luz funcionem perfeitamente, do início ao fim</li>
       </ul>
     </section>
 
     <aside>
-      <h3>Próximo evento</h3>
-      <p>Fique ligado em nossas redes! Em breve anunciaremos a próxima festa com a marca MI.</p>
+        <h3>Próximo evento</h3>
+        <p>Fique ligado em nossas redes! Em breve anunciaremos a próxima festa com a marca MI.</p>
+
       
-      <div>
-        <div>
+      <header>
+        <h1  id="galeria">Galeria De Eventos</h1>
+        <p>Veja um pouco dos nossos melhores momentos no qual ajudamos amplificando a iluminação local</p>
+      </header>
+      </aside>
 
-        </div>
-      </div>
-      <!-- Pode entrar uma imagem de plateia animada aqui -->
-      <!-- Ex: <img src="plateia.jpeg" alt="Público curtindo evento com música e iluminação"> -->
-    </aside>
+      <section class="galeria-flex"> <!--Galeria de fotos-->
+        
+          <div class="linha1">
+            <img src="Imagens/Imagem Show .jpg" alt="Show com iluminação">
+            <img src= "Imagens/Imagem Casamento.jpg" alt="Imagem da iluminação de um casamento">
+          </div>
+          <div class="linha1">
+            <img src="Imagens/Imagem Formandos.jpg" alt="Imagem de um evento de formandos">
+            <img src="Imagens/Aniversário.jpg" alt="imagem de um aniversário">
+          </div>
+      
+      </section>               
 
-    <section id="formulario">
-      <h2>Solicite um Orçamento</h2>
-      <form>
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" required>
+   <section id="formulario">
 
+     <h2>Solicite um Orçamento</h2>
+
+    <form> <!--Formulario de contato/orçamento-->
+
+       <label for="nome">Nome completo:</label>
+       <input type="text" id="nome" name="nome" required>
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" required>
 
@@ -73,12 +103,14 @@
 
         <input type="submit" value="Enviar">
       </form>
+
     </section>
 
-    <footer>
+    <footer> <!--Rodape do site informando contato-->
       <p>Contato: (71) 98783-7229 |<a href= "https://www.instagram.com/miaudioiluminacao/"> Instagram</a> </p>
-      <!-- Comentário: Adicionar imagem com métodos de pagamento (metodosdepagamento.jpeg) -->
+      <img src="Imagens/metodosdepagamento.jpeg" alt="Metodos de pagamento">
     </footer>
+
   </div>
 </body>
 </html>
