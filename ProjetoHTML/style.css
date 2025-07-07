@@ -1,0 +1,183 @@
+body {
+  background-color: #040811; /* Altera a cor de fundo do site */
+  font-family: 'Poppins', sans-serif; /* Altera a fonte */
+  margin: 0; /* Altera a margem do site */
+  padding: 0;
+  color: white; /* Muda a cor do texto para branco */
+}
+
+.logo { /* Ocupa toda a largura possível */
+  width: 100%; /* Ocupa toda a largura possível */
+  max-width: 450px; /* Limita o tamanho máximo */
+  height: auto; /* Altura ajusta automaticamente */
+}
+
+nav { /* Propriedades do nav */
+  background-color: #0a0f1c;
+  padding: 10px 0;
+  text-align: center; /* Centraliza os elementos do nav */
+}
+
+nav ul {
+  display: flex; /* Exibe os itens da lista lado a lado */
+  flex-wrap: wrap; /* "Amarra" os elementos, deixando-os todos juntos */
+  padding: 0; /* Remove o espaçamento interno da lista */
+  margin: 0; /* Remove a margem externa da lista */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 30px; /* Define o espaçamento entre os itens */
+}
+
+nav ul li a {
+  display: flex;
+  flex-wrap: wrap;
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 600; /* Define a espessura da fonte dos links */
+}
+
+nav ul li a:hover { /* Aplica sublinhado no texto quando o mouse é passado por cima do nav*/
+  text-decoration: underline;
+}
+
+section, aside { 
+  padding: 40px 20px; /* Altera o espaçamento interno dos section e aside */
+  text-align: center;
+}
+
+
+h1, h2, h3 { /* Altera a cor das fontes para azul */
+  color: #00aaff;
+}
+
+header{
+text-align: center; /*Alinha os itens do header */
+padding: 2rem;
+background-color: #011627;
+}
+
+.galeria-flex { /* Conteiner das fotos da galeria */
+gap: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2rem;
+}
+
+.linha1{ /* Ajusta o conteiner das imagens */
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.linha1 img{
+  width: 100%; /* Ocupa toda a largura possível */
+  max-width: 300px;
+  height: auto; 
+  aspect-ratio: 3 / 2; /* Garante proporção bonitinha */
+  object-fit: cover; /* Faz com que a foto tome todo espaço do conteiner */
+  border-radius: 12px; /* Altera a borda da foto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Mini-animação pra quando o mouse passa por cima da foto */
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2); /*Aplica uma sombra azul quando o mouse passa por cima da foto */
+}
+
+.linha1 img:hover {
+  transform: scale(1.05); /* Altera o tamanho da foto da galeria quando o mouse é passado por cima */
+  box-shadow: 0 0 15px #00f0ff
+}
+
+
+
+.linha2 img{ /* Ajusta as propriedades das imagens dentro do conteiner da galeria */
+  width: 100%; 
+  max-width: 300px;
+  height: auto; 
+  aspect-ratio: 3 / 2; 
+  object-fit: cover; /* Ajusta a imagem dentro do conteiner */
+  border-radius: 12px; /* Ajusta as bordas da imagem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px #00FFFF; /* Sombra que aparece ao redor da imagem quando o mouse é passado por cima */
+}
+
+.linha2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f0ff
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Deixa os itens do formulário em alinhados colunas */
+  align-items: center; /* Alinha os itens do formulário no centro */
+  max-width: 500px; /*Largura máxima do formulario */
+  margin: 0 auto; /* Centraliza o formulario na tela */
+  background-color: rgba(255, 255, 255, 0.1); /* Altera a cor do formulario */
+  padding: 20px; /* Altera a borda interna do formulario */
+  border-radius: 10px; /* Arredonda as pontas do formulário */
+}
+
+form label, form input, form textarea { /* Altera as propriedades dos elementos do formulario */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  margin-bottom: 10px;/* Espaçamento inferior entre os campos */
+}
+
+form input, form textarea {
+  padding: 10px; /* Altera o espaçamento interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Arredonda as bordas dos campos */
+} 
+
+form input[type="submit"] {
+  background-color: #00aaff; /* Altera a cor do botão */
+  color: white; /* Altera a cor do texto */
+  font-weight: bold; /* Deixa o texto do botão em negrito */
+  cursor: pointer; /* Altera o cursor "para mãozinha" ao passar por cima */
+}
+
+form input[type="submit"]:hover {
+  background-color: #008ecc; /* Muda a cor do botão quando o mouse passa por cima */
+}
+
+footer {
+  background-color: #000000e8; /* ALtera a cor do rodapé para preto */
+  color: white; /* Altera a cor do texto */
+  text-align: center; /* Alinha os itens do rodapé no centro */
+  padding: 20px;/* Altera o espaçamento interno */
+  font-size: 14px; /* Altera o tamanho da fonte */
+}
+
+#dubstep{
+    height: auto; 
+    max-width: 700px;
+    width: 100%; 
+}
+
+@media screen and (max-width: 768px) {
+  .linha1, .linha2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 300px;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-direction: column;
+  
+  }
+
+  form {
+    width: 90%;
+    padding: 10%;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  #dubstep {
+    max-width: 100%;
+    height: auto;
+  }
+}
